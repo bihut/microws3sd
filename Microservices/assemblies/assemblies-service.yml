@@ -1,0 +1,17 @@
+apiVersion: v1
+
+kind: Service
+
+metadata:
+  name: ws3d-assemblies-service
+  labels:
+    app: ws3d-assemblies-service
+
+spec:
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5003
+  selector:
+    app: ws3d-assemblies-pod

@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+  name: ws3d-blender-deployment
+  labels:
+    app: ws3d-blender-deployment
+
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ws3d-blender-pod
+
+  template:
+    metadata:
+      name: ws3d-blender-pod
+      labels:
+        app: ws3d-blender-pod
+
+    spec:
+      containers:
+        - name: ws3d-blender-container
+          image: ws3d-blender
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 5000
+          volumeMounts:
+            - name: data
+              mountPath: /tmp/data
+      
+      volumes:
+        - name: data
+          hostPath:
+            path: /tmp/data
+            type: Directory

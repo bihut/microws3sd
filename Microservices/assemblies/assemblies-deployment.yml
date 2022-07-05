@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+  name: ws3d-assemblies-deployment
+  labels:
+    app: ws3d-assemblies-deployment
+
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ws3d-assemblies-pod
+
+  template:
+    metadata:
+      name: ws3d-assemblies-pod
+      labels:
+        app: ws3d-assemblies-pod
+
+    spec:
+      containers:
+        - name: ws3d-assemblies-container
+          image: ws3d-assemblies
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 5003
+          volumeMounts:
+            - name: data
+              mountPath: /tmp/data
+      
+      volumes:
+        - name: data
+          hostPath:
+            path: /tmp/data
+            type: Directory

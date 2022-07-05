@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+  name: ws3d-textures-deployment
+  labels:
+    app: ws3d-textures-deployment
+
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ws3d-textures-pod
+
+  template:
+    metadata:
+      name: ws3d-textures-pod
+      labels:
+        app: ws3d-textures-pod
+
+    spec:
+      containers:
+        - name: ws3d-textures-container
+          image: ws3d-textures
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 5002
+          volumeMounts:
+            - name: data
+              mountPath: /tmp/data
+      
+      volumes:
+        - name: data
+          hostPath:
+            path: /tmp/data
+            type: Directory

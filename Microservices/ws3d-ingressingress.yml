@@ -1,0 +1,52 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: minikube-ingress
+  namespace: default
+  annotations:
+     kubernetes.io/ingress.class: nginx
+     nginx.ingress.kubernetes.io/ssl-redirect: "false"
+     nginx.ingress.kubernetes.io/rewrite-target: /$1
+spec:
+  rules:
+  - host: ws3d.info
+    http:
+      paths:
+      - path: /animations/(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: ws3d-animations-service
+            port:
+              number: 5001
+      - path: /textures/(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: ws3d-textures-service
+            port:
+              number: 5002
+      - path: /blender/(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: ws3d-blender-service
+            port:
+              number: 5000
+      - path: /utils/(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: ws3d-utils-service
+            port:
+              number: 5004
+      - path: /assemblies/(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: ws3d-assemblies-service
+            port:
+              number: 5003
+
+              
+
