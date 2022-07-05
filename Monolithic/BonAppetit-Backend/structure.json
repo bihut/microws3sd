@@ -1,0 +1,16 @@
+{
+  "mongodbprotocol": "mongodb://",
+  "mongodbserver": "localhost",
+  "mongodbusername": "XXXXX",
+  "mongodbpassword": "XXXX",
+  "mongodbdb": "XXXX",
+  "static": "static/",
+  "images": "static/images/",
+  "avatars": "static/avatars/",
+  "temp_avatars": "static/tempavatars",
+  "collections": "collections/",
+  "models": "static/models/",
+  "pythonmodules":"/media/bihut/dev/Proyectos/BonAppetit-Backend",
+  "blenderpath": "/Applications/Blender.app/Contents/MacOS/Blender",
+  "blenderscriptpath":"/Users/bihut/GoogleDrive/UGR/Proyectos/BonAppetit/BonAppetit-Backend/BonAppetit-Backend-v2.py"
+}

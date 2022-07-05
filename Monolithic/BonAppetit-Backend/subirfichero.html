@@ -1,0 +1,27 @@
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-latest.min.js"/>
+</head>
+   <body>
+      <form id="myForm" action = "http://localhost:5000/api/upload" method = "POST"
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <input type = "submit"/>
+      </form>
+   </body>
+<script>
+    $('#myForm').submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+        url: 'http://localhost:5000/api/upload',
+        data: $(this).serialize(),
+        type: 'POST',
+        success: function(data) {
+            console.log(data);
+            alert(data);
+        }
+    });
+});
+;
+</script>
+</html>

@@ -1,0 +1,28 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1655451882912,12,Op-1-GetModels-1,200,OK,w3sd Workflow 1-1,text,true,,311,126,1,1,http://10.108.196.111/api/model,12,0,1
+1655451883234,9,Op-1-GetModels-2,200,OK,w3sd Workflow 1-2,text,true,,311,126,2,2,http://10.108.196.111/api/model,9,0,2
+1655451883574,3,Op-1-GetModels-3,200,OK,w3sd Workflow 1-3,text,true,,311,126,3,3,http://10.108.196.111/api/model,3,0,0
+1655451883244,5046,Op-2-GetAnimations-2,200,OK,w3sd Workflow 1-2,text,true,,250,150,3,3,http://10.109.14.128/api/model/character.fbx/animations,5046,0,0
+1655451882924,5378,Op-2-GetAnimations-1,200,OK,w3sd Workflow 1-1,text,true,,250,150,3,3,http://10.109.14.128/api/model/character.fbx/animations,5378,0,1
+1655451883577,5994,Op-2-GetAnimations-3,200,OK,w3sd Workflow 1-3,text,true,,250,150,3,3,http://10.109.14.128/api/model/character.fbx/animations,5994,0,1
+1655451888292,4781,Op-3-GetItems-2,200,OK,w3sd Workflow 1-2,text,true,,1253,150,3,3,http://10.97.252.148/api/model/character.fbx/assemblies,4781,0,0
+1655451888303,5588,Op-3-GetItems-1,200,OK,w3sd Workflow 1-1,text,true,,1253,150,3,3,http://10.97.252.148/api/model/character.fbx/assemblies,5588,0,1
+1655451893073,5393,Op-4-HideElement-2,200,OK,w3sd Workflow 1-2,text,true,,246,379,3,3,http://10.97.252.148/api/model/character.fbx/hide,5393,0,0
+1655451889573,9659,Op-3-GetItems-3,200,OK,w3sd Workflow 1-3,text,true,,1253,150,3,3,http://10.97.252.148/api/model/character.fbx/assemblies,9659,0,0
+1655451893890,7445,Op-4-HideElement-1,200,OK,w3sd Workflow 1-1,text,true,,246,379,3,3,http://10.97.252.148/api/model/character.fbx/hide,7445,0,0
+1655451898468,5984,Op-5-ShowElement-2,200,OK,w3sd Workflow 1-2,text,true,,246,330,3,3,http://10.97.252.148/api/model/character.fbx/show,5983,0,0
+1655451899232,7235,Op-4-HideElement-3,200,OK,w3sd Workflow 1-3,text,true,,246,379,3,3,http://10.97.252.148/api/model/character.fbx/hide,7235,0,0
+1655451901336,5639,Op-5-ShowElement-1,200,OK,w3sd Workflow 1-1,text,true,,246,330,3,3,http://10.97.252.148/api/model/character.fbx/show,5639,0,0
+1655451904451,5123,Op-6-ChangeTextureColor-2,200,OK,w3sd Workflow 1-2,text,true,,246,344,3,3,http://10.111.165.248/api/model/character.fbx/texturecolor,5123,0,1
+1655451906466,5572,Op-5-ShowElement-3,200,OK,w3sd Workflow 1-3,text,true,,246,330,3,3,http://10.97.252.148/api/model/character.fbx/show,5572,0,0
+1655451906976,6238,Op-6-ChangeTextureColor-1,200,OK,w3sd Workflow 1-1,text,true,,246,344,3,3,http://10.111.165.248/api/model/character.fbx/texturecolor,6238,0,0
+1655451909575,6438,Op-7-ChangeTextureMaterial-2,200,OK,w3sd Workflow 1-2,text,true,,246,351,3,3,http://10.111.165.248/api/model/character.fbx/texturematerial,6438,0,1
+1655451912039,6230,Op-6-ChangeTextureColor-3,200,OK,w3sd Workflow 1-3,text,true,,246,344,3,3,http://10.111.165.248/api/model/character.fbx/texturecolor,6230,0,0
+1655451913215,5261,Op-7-ChangeTextureMaterial-1,200,OK,w3sd Workflow 1-1,text,true,,246,351,3,3,http://10.111.165.248/api/model/character.fbx/texturematerial,5261,0,0
+1655451916013,4890,Op-8-GenerateAvatar-2,200,OK,w3sd Workflow 1-2,text,true,,246,313,3,3,http://10.108.196.111/api/avatar,4890,0,1
+1655451883234,37664,Workflow-User-2,200,"Number of samples in transaction : 8, number of failing samples : 0",w3sd Workflow 1-2,,true,,3044,2143,3,3,null,37663,6,5
+1655451918477,5321,Op-8-GenerateAvatar-1,200,OK,w3sd Workflow 1-1,text,true,,246,313,2,2,http://10.108.196.111/api/avatar,5321,0,1
+1655451882912,40882,Workflow-User-1,200,"Number of samples in transaction : 8, number of failing samples : 0",w3sd Workflow 1-1,,true,,3044,2143,2,2,null,40882,3,4
+1655451918271,6011,Op-7-ChangeTextureMaterial-3,200,OK,w3sd Workflow 1-3,text,true,,246,351,1,1,http://10.111.165.248/api/model/character.fbx/texturematerial,6011,0,1
+1655451924281,8508,Op-8-GenerateAvatar-3,200,OK,w3sd Workflow 1-3,text,true,,246,313,1,1,http://10.108.196.111/api/avatar,8508,0,1
+1655451883573,49212,Workflow-User-3,200,"Number of samples in transaction : 8, number of failing samples : 0",w3sd Workflow 1-3,,true,,3044,2143,1,1,null,49212,4,3

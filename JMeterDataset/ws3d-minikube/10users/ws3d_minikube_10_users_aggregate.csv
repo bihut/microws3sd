@@ -1,0 +1,91 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1655409721504,23,Op-1-GetModels-1,200,OK,w3sd Workflow 1-1,text,true,,311,126,1,1,http://10.108.196.111/api/model,18,0,1
+1655409721611,4,Op-1-GetModels-2,200,OK,w3sd Workflow 1-2,text,true,,311,126,2,2,http://10.108.196.111/api/model,4,0,1
+1655409721707,5,Op-1-GetModels-3,200,OK,w3sd Workflow 1-3,text,true,,311,126,3,3,http://10.108.196.111/api/model,5,0,0
+1655409721808,5,Op-1-GetModels-4,200,OK,w3sd Workflow 1-4,text,true,,311,126,4,4,http://10.108.196.111/api/model,5,0,0
+1655409721907,7,Op-1-GetModels-5,200,OK,w3sd Workflow 1-5,text,true,,311,126,5,5,http://10.108.196.111/api/model,7,0,0
+1655409722007,51,Op-1-GetModels-6,200,OK,w3sd Workflow 1-6,text,true,,311,126,6,6,http://10.108.196.111/api/model,51,0,0
+1655409722112,16,Op-1-GetModels-7,200,OK,w3sd Workflow 1-7,text,true,,311,126,7,7,http://10.108.196.111/api/model,15,0,1
+1655409722207,25,Op-1-GetModels-8,200,OK,w3sd Workflow 1-8,text,true,,311,126,8,8,http://10.108.196.111/api/model,25,0,1
+1655409722320,9,Op-1-GetModels-9,200,OK,w3sd Workflow 1-9,text,true,,311,126,9,9,http://10.108.196.111/api/model,9,0,0
+1655409722444,8,Op-1-GetModels-10,200,OK,w3sd Workflow 1-10,text,true,,311,126,10,10,http://10.108.196.111/api/model,8,0,1
+1655409721616,9456,Op-2-GetAnimations-2,200,OK,w3sd Workflow 1-2,text,true,,250,150,10,10,http://10.109.14.128/api/model/character.fbx/animations,9456,0,1
+1655409721713,9404,Op-2-GetAnimations-3,200,OK,w3sd Workflow 1-3,text,true,,250,150,10,10,http://10.109.14.128/api/model/character.fbx/animations,9404,0,0
+1655409721533,9890,Op-2-GetAnimations-1,200,OK,w3sd Workflow 1-1,text,true,,250,150,10,10,http://10.109.14.128/api/model/character.fbx/animations,9890,0,6
+1655409721914,10955,Op-2-GetAnimations-5,200,OK,w3sd Workflow 1-5,text,true,,250,150,10,10,http://10.109.14.128/api/model/character.fbx/animations,10955,0,1
+1655409721814,11256,Op-2-GetAnimations-4,200,OK,w3sd Workflow 1-4,text,true,,250,150,10,10,http://10.109.14.128/api/model/character.fbx/animations,11256,0,0
+1655409731073,6716,Op-3-GetItems-2,200,OK,w3sd Workflow 1-2,text,true,,1253,150,10,10,http://10.97.252.148/api/model/character.fbx/assemblies,6716,0,0
+1655409731423,6840,Op-3-GetItems-1,200,OK,w3sd Workflow 1-1,text,true,,1253,150,10,10,http://10.97.252.148/api/model/character.fbx/assemblies,6840,0,1
+1655409722330,17386,Op-2-GetAnimations-9,200,OK,w3sd Workflow 1-9,text,true,,250,150,10,10,http://10.109.14.128/api/model/character.fbx/animations,17386,0,0
+1655409733071,7324,Op-3-GetItems-4,200,OK,w3sd Workflow 1-4,text,true,,1253,150,10,10,http://10.97.252.148/api/model/character.fbx/assemblies,7324,0,0
+1655409737791,7688,Op-4-HideElement-2,200,OK,w3sd Workflow 1-2,text,true,,246,379,10,10,http://10.97.252.148/api/model/character.fbx/hide,7688,0,1
+1655409722059,23799,Op-2-GetAnimations-6,200,OK,w3sd Workflow 1-6,text,true,,250,150,10,10,http://10.109.14.128/api/model/character.fbx/animations,23799,0,0
+1655409722233,25370,Op-2-GetAnimations-8,200,OK,w3sd Workflow 1-8,text,true,,250,150,10,10,http://10.109.14.128/api/model/character.fbx/animations,25370,0,0
+1655409740395,7778,Op-4-HideElement-4,200,OK,w3sd Workflow 1-4,text,true,,246,379,10,10,http://10.97.252.148/api/model/character.fbx/hide,7778,0,1
+1655409745860,7496,Op-3-GetItems-6,200,OK,w3sd Workflow 1-6,text,true,,1253,150,10,10,http://10.97.252.148/api/model/character.fbx/assemblies,7496,0,0
+1655409739718,15218,Op-3-GetItems-9,200,OK,w3sd Workflow 1-9,text,true,,1253,150,10,10,http://10.97.252.148/api/model/character.fbx/assemblies,15218,0,0
+1655409748175,7515,Op-5-ShowElement-4,200,OK,w3sd Workflow 1-4,text,true,,246,330,10,10,http://10.97.252.148/api/model/character.fbx/show,7515,0,0
+1655409745480,10294,Op-5-ShowElement-2,200,OK,w3sd Workflow 1-2,text,true,,246,330,10,10,http://10.97.252.148/api/model/character.fbx/show,10294,0,0
+1655409747605,11108,Op-3-GetItems-8,200,OK,w3sd Workflow 1-8,text,true,,1253,150,10,10,http://10.97.252.148/api/model/character.fbx/assemblies,11108,0,0
+1655409732869,30388,Op-3-GetItems-5,200,OK,w3sd Workflow 1-5,text,true,,1253,150,10,10,http://10.97.252.148/api/model/character.fbx/assemblies,30388,0,1
+1655409755690,8550,Op-6-ChangeTextureColor-4,200,OK,w3sd Workflow 1-4,text,true,,246,344,10,10,http://10.111.165.248/api/model/character.fbx/texturecolor,8550,0,0
+1655409754935,10106,Op-4-HideElement-9,200,OK,w3sd Workflow 1-9,text,true,,246,379,10,10,http://10.97.252.148/api/model/character.fbx/hide,10106,0,0
+1655409722453,43152,Op-2-GetAnimations-10,200,OK,w3sd Workflow 1-10,text,true,,250,150,10,10,http://10.109.14.128/api/model/character.fbx/animations,43152,0,0
+1655409755774,10294,Op-6-ChangeTextureColor-2,200,OK,w3sd Workflow 1-2,text,true,,246,344,10,10,http://10.111.165.248/api/model/character.fbx/texturecolor,10294,0,0
+1655409722128,45154,Op-2-GetAnimations-7,200,OK,w3sd Workflow 1-7,text,true,,250,150,10,10,http://10.109.14.128/api/model/character.fbx/animations,45154,0,0
+1655409731117,42831,Op-3-GetItems-3,200,OK,w3sd Workflow 1-3,text,true,,1253,150,10,10,http://10.97.252.148/api/model/character.fbx/assemblies,42831,0,1
+1655409764242,9945,Op-7-ChangeTextureMaterial-4,200,OK,w3sd Workflow 1-4,text,true,,246,351,10,10,http://10.111.165.248/api/model/character.fbx/texturematerial,9945,0,0
+1655409767284,7780,Op-3-GetItems-7,200,OK,w3sd Workflow 1-7,text,true,,1253,150,10,10,http://10.97.252.148/api/model/character.fbx/assemblies,7780,0,0
+1655409738264,37640,Op-4-HideElement-1,200,OK,w3sd Workflow 1-1,text,true,,246,379,10,10,http://10.97.252.148/api/model/character.fbx/hide,37640,0,0
+1655409763258,15070,Op-4-HideElement-5,200,OK,w3sd Workflow 1-5,text,true,,246,379,10,10,http://10.97.252.148/api/model/character.fbx/hide,15069,0,0
+1655409774186,6870,Op-8-GenerateAvatar-4,200,OK,w3sd Workflow 1-4,text,true,,246,313,10,10,http://10.108.196.111/api/avatar,6870,0,1
+1655409721808,59243,Workflow-User-4,200,"Number of samples in transaction : 8, number of failing samples : 0",w3sd Workflow 1-4,,true,,3044,2143,10,10,null,59243,5,2
+1655409773949,8868,Op-4-HideElement-3,200,OK,w3sd Workflow 1-3,text,true,,246,379,9,9,http://10.97.252.148/api/model/character.fbx/hide,8868,0,0
+1655409753356,30582,Op-4-HideElement-6,200,OK,w3sd Workflow 1-6,text,true,,246,379,9,9,http://10.97.252.148/api/model/character.fbx/hide,30581,0,0
+1655409765043,20700,Op-5-ShowElement-9,200,OK,w3sd Workflow 1-9,text,true,,246,330,9,9,http://10.97.252.148/api/model/character.fbx/show,20700,0,0
+1655409765607,21893,Op-3-GetItems-10,200,OK,w3sd Workflow 1-10,text,true,,1253,150,9,9,http://10.97.252.148/api/model/character.fbx/assemblies,21893,0,0
+1655409758713,32058,Op-4-HideElement-8,200,OK,w3sd Workflow 1-8,text,true,,246,379,9,9,http://10.97.252.148/api/model/character.fbx/hide,32057,0,0
+1655409782819,8202,Op-5-ShowElement-3,200,OK,w3sd Workflow 1-3,text,true,,246,330,9,9,http://10.97.252.148/api/model/character.fbx/show,8202,0,0
+1655409785744,7864,Op-6-ChangeTextureColor-9,200,OK,w3sd Workflow 1-9,text,true,,246,344,9,9,http://10.111.165.248/api/model/character.fbx/texturecolor,7864,0,0
+1655409775064,19351,Op-4-HideElement-7,200,OK,w3sd Workflow 1-7,text,true,,246,379,9,9,http://10.97.252.148/api/model/character.fbx/hide,19351,0,0
+1655409778327,19787,Op-5-ShowElement-5,200,OK,w3sd Workflow 1-5,text,true,,246,330,9,9,http://10.97.252.148/api/model/character.fbx/show,19787,0,0
+1655409766070,34076,Op-7-ChangeTextureMaterial-2,200,OK,w3sd Workflow 1-2,text,true,,246,351,9,9,http://10.111.165.248/api/model/character.fbx/texturematerial,34076,0,0
+1655409787500,13041,Op-4-HideElement-10,200,OK,w3sd Workflow 1-10,text,true,,246,379,9,9,http://10.97.252.148/api/model/character.fbx/hide,13041,0,0
+1655409794416,8483,Op-5-ShowElement-7,200,OK,w3sd Workflow 1-7,text,true,,246,330,9,9,http://10.97.252.148/api/model/character.fbx/show,8483,0,0
+1655409798116,8523,Op-6-ChangeTextureColor-5,200,OK,w3sd Workflow 1-5,text,true,,246,344,9,9,http://10.111.165.248/api/model/character.fbx/texturecolor,8523,0,0
+1655409800147,6721,Op-8-GenerateAvatar-2,200,OK,w3sd Workflow 1-2,text,true,,246,313,9,9,http://10.108.196.111/api/avatar,6721,0,0
+1655409721610,85249,Workflow-User-2,200,"Number of samples in transaction : 8, number of failing samples : 0",w3sd Workflow 1-2,,true,,3044,2143,9,9,null,85249,9,3
+1655409790772,16442,Op-5-ShowElement-8,200,OK,w3sd Workflow 1-8,text,true,,246,330,8,8,http://10.97.252.148/api/model/character.fbx/show,16442,0,0
+1655409791021,18935,Op-6-ChangeTextureColor-3,200,OK,w3sd Workflow 1-3,text,true,,246,344,8,8,http://10.111.165.248/api/model/character.fbx/texturecolor,18935,0,1
+1655409802899,7776,Op-6-ChangeTextureColor-7,200,OK,w3sd Workflow 1-7,text,true,,246,344,8,8,http://10.111.165.248/api/model/character.fbx/texturecolor,7776,0,1
+1655409806639,6804,Op-7-ChangeTextureMaterial-5,200,OK,w3sd Workflow 1-5,text,true,,246,351,8,8,http://10.111.165.248/api/model/character.fbx/texturematerial,6803,0,0
+1655409807213,7927,Op-6-ChangeTextureColor-8,200,OK,w3sd Workflow 1-8,text,true,,246,344,8,8,http://10.111.165.248/api/model/character.fbx/texturecolor,7927,0,2
+1655409809955,8015,Op-7-ChangeTextureMaterial-3,200,OK,w3sd Workflow 1-3,text,true,,246,351,8,8,http://10.111.165.248/api/model/character.fbx/texturematerial,8015,0,0
+1655409793608,25260,Op-7-ChangeTextureMaterial-9,200,OK,w3sd Workflow 1-9,text,true,,246,351,8,8,http://10.111.165.248/api/model/character.fbx/texturematerial,25260,0,0
+1655409810674,8811,Op-7-ChangeTextureMaterial-7,200,OK,w3sd Workflow 1-7,text,true,,246,351,8,8,http://10.111.165.248/api/model/character.fbx/texturematerial,8811,0,0
+1655409813443,9384,Op-8-GenerateAvatar-5,200,OK,w3sd Workflow 1-5,text,true,,246,313,8,8,http://10.108.196.111/api/avatar,9384,0,0
+1655409721907,100918,Workflow-User-5,200,"Number of samples in transaction : 8, number of failing samples : 0",w3sd Workflow 1-5,,true,,3044,2143,8,8,null,100916,2,2
+1655409800541,22811,Op-5-ShowElement-10,200,OK,w3sd Workflow 1-10,text,true,,246,330,7,7,http://10.97.252.148/api/model/character.fbx/show,22810,0,0
+1655409818868,7860,Op-8-GenerateAvatar-9,200,OK,w3sd Workflow 1-9,text,true,,246,313,7,7,http://10.108.196.111/api/avatar,7860,0,0
+1655409722320,104403,Workflow-User-9,200,"Number of samples in transaction : 8, number of failing samples : 0",w3sd Workflow 1-9,,true,,3044,2143,7,7,null,104403,4,0
+1655409817972,9524,Op-8-GenerateAvatar-3,200,OK,w3sd Workflow 1-3,text,true,,246,313,6,6,http://10.108.196.111/api/avatar,9523,0,0
+1655409721707,105784,Workflow-User-3,200,"Number of samples in transaction : 8, number of failing samples : 0",w3sd Workflow 1-3,,true,,3044,2143,6,6,null,105783,4,2
+1655409823352,7370,Op-6-ChangeTextureColor-10,200,OK,w3sd Workflow 1-10,text,true,,246,344,5,5,http://10.111.165.248/api/model/character.fbx/texturecolor,7370,0,1
+1655409783942,46962,Op-5-ShowElement-6,200,OK,w3sd Workflow 1-6,text,true,,246,330,5,5,http://10.97.252.148/api/model/character.fbx/show,46962,0,0
+1655409815140,17108,Op-7-ChangeTextureMaterial-8,200,OK,w3sd Workflow 1-8,text,true,,246,351,5,5,http://10.111.165.248/api/model/character.fbx/texturematerial,17107,0,1
+1655409819486,14766,Op-8-GenerateAvatar-7,200,OK,w3sd Workflow 1-7,text,true,,246,313,5,5,http://10.108.196.111/api/avatar,14766,0,0
+1655409722112,112137,Workflow-User-7,200,"Number of samples in transaction : 8, number of failing samples : 0",w3sd Workflow 1-7,,true,,3044,2143,5,5,null,112136,2,2
+1655409830721,6808,Op-7-ChangeTextureMaterial-10,200,OK,w3sd Workflow 1-10,text,true,,246,351,4,4,http://10.111.165.248/api/model/character.fbx/texturematerial,6808,0,1
+1655409830903,6672,Op-6-ChangeTextureColor-6,200,OK,w3sd Workflow 1-6,text,true,,246,344,4,4,http://10.111.165.248/api/model/character.fbx/texturecolor,6672,0,1
+1655409775904,62014,Op-5-ShowElement-1,200,OK,w3sd Workflow 1-1,text,true,,246,330,4,4,http://10.97.252.148/api/model/character.fbx/show,62014,0,0
+1655409837530,4890,Op-8-GenerateAvatar-10,200,OK,w3sd Workflow 1-10,text,true,,246,313,4,4,http://10.108.196.111/api/avatar,4890,0,0
+1655409722443,119973,Workflow-User-10,200,"Number of samples in transaction : 8, number of failing samples : 0",w3sd Workflow 1-10,,true,,3044,2143,4,4,null,119972,3,3
+1655409837919,4915,Op-6-ChangeTextureColor-1,200,OK,w3sd Workflow 1-1,text,true,,246,344,3,3,http://10.111.165.248/api/model/character.fbx/texturecolor,4915,0,1
+1655409832248,12928,Op-8-GenerateAvatar-8,200,OK,w3sd Workflow 1-8,text,true,,246,313,3,3,http://10.108.196.111/api/avatar,12928,0,0
+1655409722207,122966,Workflow-User-8,200,"Number of samples in transaction : 8, number of failing samples : 0",w3sd Workflow 1-8,,true,,3044,2143,3,3,null,122964,3,4
+1655409842833,5079,Op-7-ChangeTextureMaterial-1,200,OK,w3sd Workflow 1-1,text,true,,246,351,2,2,http://10.111.165.248/api/model/character.fbx/texturematerial,5079,0,0
+1655409837576,10897,Op-7-ChangeTextureMaterial-6,200,OK,w3sd Workflow 1-6,text,true,,246,351,2,2,http://10.111.165.248/api/model/character.fbx/texturematerial,10897,0,1
+1655409847913,4167,Op-8-GenerateAvatar-1,200,OK,w3sd Workflow 1-1,text,true,,246,313,2,2,http://10.108.196.111/api/avatar,4166,0,1
+1655409721503,130568,Workflow-User-1,200,"Number of samples in transaction : 8, number of failing samples : 0",w3sd Workflow 1-1,,true,,3044,2143,2,2,null,130562,8,10
+1655409848473,4116,Op-8-GenerateAvatar-6,200,OK,w3sd Workflow 1-6,text,true,,246,313,1,1,http://10.108.196.111/api/avatar,4116,0,1
+1655409722007,130575,Workflow-User-6,200,"Number of samples in transaction : 8, number of failing samples : 0",w3sd Workflow 1-6,,true,,3044,2143,1,1,null,130574,7,3

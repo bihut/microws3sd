@@ -1,0 +1,10 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,SampleCount,ErrorCount,IdleTime,Connect
+1655452838390,3,Op-1-GetModels-1,200,OK,w3sd Workflow 1-1,text,true,,312,129,1,1,http://192.168.0.87:5001/api/model,3,1,0,0,1
+1655452838393,2710,Op-2-GetAnimations-1,200,OK,w3sd Workflow 1-1,text,true,,296,154,1,1,http://192.168.0.87:5001/api/model/character.fbx/animations,2710,1,0,0,1
+1655452841103,2695,Op-3-GetItems-1,200,OK,w3sd Workflow 1-1,text,true,,1298,154,1,1,http://192.168.0.87:5001/api/model/character.fbx/assemblies,2695,1,0,0,1
+1655452843798,2687,Op-4-HideElement-1,200,OK,w3sd Workflow 1-1,text,true,,292,424,1,1,http://192.168.0.87:5001/api/model/character.fbx/hide,2687,1,0,0,1
+1655452846485,2663,Op-5-ShowElement-1,200,OK,w3sd Workflow 1-1,text,true,,292,375,1,1,http://192.168.0.87:5001/api/model/character.fbx/show,2663,1,0,0,1
+1655452849148,2667,Op-6-ChangeTextureColor-1,200,OK,w3sd Workflow 1-1,text,true,,292,388,1,1,http://192.168.0.87:5001/api/model/character.fbx/texturecolor,2667,1,0,0,0
+1655452851815,2710,Op-7-ChangeTextureMaterial-1,200,OK,w3sd Workflow 1-1,text,true,,292,395,1,1,http://192.168.0.87:5001/api/model/character.fbx/texturematerial,2710,1,0,0,1
+1655452854525,2742,Op-8-GenerateAvatar-1,200,OK,w3sd Workflow 1-1,text,true,,292,364,1,1,http://192.168.0.87:5001/api/avatar,2742,1,0,0,0
+1655452838390,18877,Workflow-User-1,200,"Number of samples in transaction : 8, number of failing samples : 0",w3sd Workflow 1-1,,true,,3366,2383,1,1,null,18877,1,0,0,6
