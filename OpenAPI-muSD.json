@@ -2,76 +2,34 @@
   "openapi": "3.0.0",
   "info": {
     "version": "1.0.0",
-    "title": "Swagger Petstore",
+    "title": "μS3D",
     "license": {
       "name": "MIT"
     }
   },
   "servers": [
     {
-      "url": "http://petstore.swagger.io/v1"
+      "url": "http://ws3d.info/v1"
     }
   ],
   "paths": {
-    "/pets": {
+    "/models": {
       "get": {
-        "summary": "List all pets",
-        "operationId": "listPets",
+        "summary": "Get all available 3D models",
+        "operationId": "listModels",
         "tags": [
-          "pets"
-        ],
-        "parameters": [
-          {
-            "name": "limit",
-            "in": "query",
-            "description": "How many items to return at one time (max 100)",
-            "required": false,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
+          "Utils"
         ],
         "responses": {
           "200": {
-            "description": "A paged array of pets",
-            "headers": {
-              "x-next": {
-                "description": "A link to the next page of responses",
-                "schema": {
-                  "type": "string"
-                }
-              }
-            },
+            "description": "A JSON object with the name of the models",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pets"
+                  "$ref": "#/components/schemas/Models"
                 }
               }
             }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        }
-      },
-      "post": {
-        "summary": "Create a pet",
-        "operationId": "createPets",
-        "tags": [
-          "pets"
-        ],
-        "responses": {
-          "201": {
-            "description": "Null response"
           },
           "default": {
             "description": "unexpected error",
@@ -86,19 +44,22 @@
         }
       }
     },
-    "/pets/{petId}": {
+    "/model/{modelname}/assemblies": {
       "get": {
-        "summary": "Info for a specific pet",
-        "operationId": "showPetById",
+        "summary": "Get a list of assemblies of the model",
+        "operationId": "listModelAssembliesByName",
+        "produces": [
+          "application/json"
+        ],
         "tags": [
-          "pets"
+          "Assemblies/Skeleton"
         ],
         "parameters": [
           {
-            "name": "petId",
+            "name": "modelname",
             "in": "path",
             "required": true,
-            "description": "The id of the pet to retrieve",
+            "description": "The name of the model",
             "schema": {
               "type": "string"
             }
@@ -110,7 +71,386 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pet"
+                  "$ref": "#/components/schemas/Assemblies"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/model/{modelname}/animations": {
+      "get": {
+        "summary": "Get a list of animations of the model",
+        "operationId": "listModelAnimationsByName",
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Animations"
+        ],
+        "parameters": [
+          {
+            "name": "modelname",
+            "in": "path",
+            "required": true,
+            "description": "The name of the model ",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Pet object that needs to be added to the store",
+            "required": true,
+            "schema": {
+              "$ref": "#/components/schemas/Models"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Expected response to a valid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Animations"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/model/{modelname}/hide": {
+      "post": {
+        "summary": "Hide a set of complements of a model",
+        "operationId": "hideComplementsofModels",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Assemblies/Skeleton"
+        ],
+        "parameters": [
+          {
+            "name": "modelname",
+            "in": "path",
+            "required": true,
+            "description": "The name of the model ",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Model information to make the customization",
+            "required": true,
+            "schema": {
+              "$ref": "#/components/schemas/InputBody"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Expected response to a valid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GeneralResponse"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+        "/model/{modelname}/show": {
+      "post": {
+        "summary": "Hide a set of complements of a model",
+        "operationId": "showComplementsofModels",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Assemblies/Skeleton"
+        ],
+        "parameters": [
+          {
+            "name": "modelname",
+            "in": "path",
+            "required": true,
+            "description": "The name of the model ",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Model information to make the customization",
+            "required": true,
+            "schema": {
+              "$ref": "#/components/schemas/InputBody"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Expected response to a valid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GeneralResponse"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+     "/model/{modelname}/texturecolor": {
+      "post": {
+        "summary": "Map texture color of a set of complements of a model",
+        "operationId": "textureColorComplementsofModels",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Textures"
+        ],
+        "parameters": [
+          {
+            "name": "modelname",
+            "in": "path",
+            "required": true,
+            "description": "The name of the model ",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Model information to make the customization",
+            "required": true,
+            "schema": {
+              "$ref": "#/components/schemas/InputBody"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Expected response to a valid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GeneralResponse"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+     "/model/{modelname}/texturematerial": {
+      "post": {
+        "summary": "Map texture material (image) of a set of complements of a model",
+        "operationId": "textureMaterialComplementsofModels",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Textures"
+        ],
+        "parameters": [
+          {
+            "name": "modelname",
+            "in": "path",
+            "required": true,
+            "description": "The name of the model ",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Model information to make the customization",
+            "required": true,
+            "schema": {
+              "$ref": "#/components/schemas/InputBody"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Expected response to a valid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GeneralResponse"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+      "/model/avatar": {
+      "post": {
+        "summary": "Create final and customized 3D model",
+        "operationId": "Generate3DCustomModel",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Utils"
+        ],
+        "parameters": [
+
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Model information to make the customization",
+            "required": true,
+            "schema": {
+              "$ref": "#/components/schemas/InputBody"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Expected response to a valid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GeneralResponse"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+     "/model/upload": {
+      "post": {
+        "summary": "Upload a new file (image, 3D model)",
+        "operationId": "UploadFile",
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Utils"
+        ],
+
+        "parameters": [
+
+         {
+            "name": "file",
+            "in": "formData",
+            "description": "file to upload",
+            "required": false,
+            "type": "file"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Expected response to a valid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GeneralResponse"
                 }
               }
             }
@@ -131,30 +471,121 @@
   },
   "components": {
     "schemas": {
-      "Pet": {
+      "Models": {
         "type": "object",
-        "required": [
-          "id",
-          "name"
-        ],
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "name": {
+          "result": {
             "type": "string"
           },
-          "tag": {
+          "models": {
+            "type": "array",
+            "items": {}
+          },
+          "avatars": {
+            "type": "array",
+            "items": {}
+          }
+        },
+        "required": [
+          "result",
+          "models",
+          "avatars"
+        ]
+      },
+      "Assemblies": {
+        "type": "object",
+        "properties": {
+          "result": {
+            "type": "string"
+          },
+          "items": {
+            "type": "array",
+            "items": {}
+          },
+          "path": {
             "type": "string"
           }
-        }
+        },
+        "required": [
+          "result",
+          "items",
+          "path"
+        ]
       },
-      "Pets": {
-        "type": "array",
-        "items": {
-          "$ref": "#/components/schemas/Pet"
-        }
+      "Animations": {
+        "type": "object",
+        "properties": {
+          "result": {
+            "type": "string"
+          },
+          "animations": {
+            "type": "array",
+            "animations": {}
+          },
+          "path": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "result",
+          "animations",
+          "path"
+        ]
+      },
+      "GeneralResponse": {
+        "type": "object",
+        "properties": {
+          "result": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "result",
+          "path"
+        ]
+      },
+      "InputBody": {
+        "type": "object",
+        "properties": {
+          "option": {
+            "type": "string"
+          },
+          "model": {
+            "type": "string"
+          },
+          "items": {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "visible": {
+                    "type": "integer"
+                  },
+                  "type": {
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "name",
+                  "visible",
+                  "type"
+                ]
+              }
+            ]
+          }
+        },
+        "required": [
+          "option",
+          "model",
+          "items"
+        ]
       },
       "Error": {
         "type": "object",

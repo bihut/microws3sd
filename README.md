@@ -42,7 +42,8 @@ are oriented for Linux users, especially Debian-based distros.
 
 #### Clone the repository
 > git clone https://github.com/bihut/microws3sd.git
-> Open the folder "microws3d"
+
+Open the folder "microws3d"
 
 ## Monolithic Implementation
 
@@ -60,7 +61,7 @@ Now you can run the back-end using:
 
 You can start to use it using the different services (check them in the file app.py).
 
-API description through Swagger tool is coming. It will be available in few days.
+API description through OpenAPI can be found in the file OpenAPpi-muSD.json.
 
 ## Microservices Implementation
 This implementation has been done using Docker and Kubernetes, specifically Minikube.
